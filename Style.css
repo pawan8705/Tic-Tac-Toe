@@ -1,0 +1,126 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+.win-container {
+    position: fixed;
+    background-color: #000000;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.restart {
+    height: 10vh;
+    width: 30vh;
+    position: absolute;
+    bottom: 6vh;
+    font-size: 2rem;
+    font-weight: bolder;
+    border: none;
+    border-radius: 20px;
+    color: #000000;
+    text-shadow: 3px 3px 9px #ff0000;
+    background-color: #ff0000;
+    box-shadow: 0 0 10px #f4310b, 0 0 20px #f40b0b, 0 0 20px #ff0000 inset;
+}
+
+#newgame {
+    height: 11vh;
+    width: 41vh;
+
+}
+
+#winner {
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+    position: relative;
+    top: 10vh;
+    color: #eeeeee;
+    margin: 0vh 1vh;
+}
+
+.gamepart {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(180deg, orange 0%, orange 20%, white 30%, white 70%, green 80%, green 100%);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+}
+
+h1 {
+    position: absolute;
+    color: #eeeeee;
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: 3px 3px 9px #000000;
+    top: 4vh;
+}
+
+.container {
+    border-radius: 20px;
+    background-color: midnightblue;
+    height: auto;
+    height: auto;
+    width: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    margin: 1vh;
+    height: 15vh;
+    width: 14vh;
+    border: none;
+    /* padding: 2vh; */
+    font-size: 5rem;
+    font-weight: bolder;
+    border-radius: 20px;
+    background-color: white;
+    color: #020278;
+    text-shadow: 4px 4px 9px black;
+}
+
+.firstbtn {
+    margin-top: 2vh;
+}
+
+.lastbtn {
+    margin-bottom: 2vh;
+}
+
+.restart:hover {
+    text-shadow: 3px 3px 9px #ff9aff;
+    background-color: #ff9aff;
+    box-shadow: 0 0 10px #ff9aff, 0 0 20px #ff9aff, 0 0 20px #ff9aff inset;
+}
+
+.restart:active {
+    text-shadow: 3px 3px 9px #8ce436;
+    background-color: #8ce436;
+    box-shadow: 0 0 10px #8ce436, 0 0 20px #8ce436, 0 0 20px #8ce436 inset;
+}
+
+.hide1 {
+    display: none;
+}
+
+@media (max-width: 500px) {
+    .gamepart {
+        background: midnightblue;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+}
